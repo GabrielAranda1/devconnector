@@ -49,8 +49,11 @@ const ProfileSchema = new Schema({
                 type: String
             },
             company: {
-                type: Date,
+                type: String,
                 required: true
+            },
+            from: {
+                type: Date
             },
             to: {
                 type: Date
@@ -78,11 +81,10 @@ const ProfileSchema = new Schema({
                 type: String,
                 required: true
             },
-            company: {
-                type: Date,
-                required: true
-            },
             to: {
+                type: Date
+            },
+            from: {
                 type: Date
             },
             current: {
